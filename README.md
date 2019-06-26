@@ -53,6 +53,6 @@ If the Data sheet has these columns:
 
 | Name | System/client | Object Name |
 | ---- | ------------- | ----------- |
-| Testname | I65/800 | Test Object Name            0001 |
+| Testname | I65/800 | <pre> Test Object Name            0001 </pre> |
 
 And you want to remove the whitespaces and the 0001 from Object Name. You will have to go to the 'createSqlStatement()' function, and change the '2' in 'elif x == 2:', to the column number you would like to remove the string from. (Column A = 0, Column B = 1 and so on). You will also have to replace the string '0001' in the row[x].replace('0001', '') function, with the string you would like to remove. It will remove whitespaces in front and behind every data cell, before putting it in the SQL Statement.
