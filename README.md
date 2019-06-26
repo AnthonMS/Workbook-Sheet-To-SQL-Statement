@@ -26,6 +26,8 @@ An example of running the create_sql_statement.py:
     python.exe create_sql_statement.py file=file_name.xlsb sheet=Sheet1 noOfRows=NoOfRowsToReadFromSheet table=DatabaseTableName column1=DbColumn1 column2=DbColumn2 column3=DbColumn3 column4=DbColumn4 syscli=Sys/CliColumnInSheet
 
 The column names has to be the same as the names in the database. So if the database has the columns: id, name, phone. You will put the column1=id column2=name column3=phone. UNLESS phone is column 2/B and name is 3/C in sheet, you will put column1=id column2=phone column3=name
-you can add columns from column1 to and including column8. To use more columns, you will need to add more in the 'getArgs()' function inside the script. You do not have to use all 8 columns, they are just there for good measure.
+
+You can add columns from column1 to and including column8. To use more columns, you will need to add more in the 'getArgs()' function inside the script. You do not have to use all 8 columns, they are just there for good measure.
+
 IMPORTANT: column1 has to be the first column of the Excel Sheet/Workbook Sheet. So if column 1 in the sheet is equal to the ID of the Database table, you will HAVE to put column1=ID. ID does NOT have to be the first column in the database, it could be the last for all it cares.
 
