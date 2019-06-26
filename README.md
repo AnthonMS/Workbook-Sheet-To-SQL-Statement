@@ -40,5 +40,5 @@ For example if you have a Data Sheet that has these columns:
 And the Database table looks like this:
 
 | id | system | client | name | objName |
-| -- | ----  | ------- | -------------- |
-| 1  | N01   | 001     | Test | Test2   |
+| -- | ------ | ------ | ---- | ------- |
+| 1  | N01    | 001    | Test | Test2   |
