@@ -22,4 +22,5 @@ When the create_sql_statement.py and the .xlsb file is in the same folder, you c
 This will show a quick help menu, nothing that is not already documented here.
 
 An example of running the create_sql_statement.py:
+
     python.exe create_sql_statement.py file=file_name.xlsb sheet=Sheet1 noOfRows=NoOfRowsToReadFromSheet table=DatabaseTableName column1=DbColumn1 column2=DbColumn2 column3=DbColumn3 column4=DbColumn4 syscli=Sys/CliColumnInSheet
