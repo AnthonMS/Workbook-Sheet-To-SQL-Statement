@@ -42,3 +42,17 @@ And the Database table looks like this:
 | id | system | client | name | objName |
 | -- | ------ | ------ | ---- | ------- |
 | 1  | N01    | 001    | Test | Test2   |
+
+The command should look like this:
+
+    python.exe create_sql_statement.py file=file_name.xlsb sheet=Sheet1 noOfRows=noOfRowsToRead table=DatabaseTableName column1=id column2=system column3=client column4=name column5=objName syscli=2
+    
+**Some information about the script code:**
+If there is something in the data sheet cell, that you would like to remove. For example:
+If the Data sheet has these columns:
+
+| Name | System/client | Object Name |
+| ---- | ------------- | ----------- |
+| Testname | I65/800 | Test Object Name            0001 |
+
+And you want to remove the whitespaces and the 0001 from Object Name. You will have to go to the 'createSqlStatement()' function, and change the '2' in 'elif x == 2:', to the column number you would like to remove the string from. (Column A = 0, Column B = 1 and so on). You will also have to replace the string '0001' in the row[x].replace('0001', '') function, with the string you would like to remove. It will remove whitespaces in front and behind every data cell, before putting it in the SQL Statement.
