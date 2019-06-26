@@ -34,8 +34,10 @@ IMPORTANT: column1 has to be the first column of the Excel Sheet/Workbook Sheet.
 For example if you have a Data Sheet that has these columns:
 
 | ID | Name | Sys/Cli | Object Name |
-| 1 | Test | N01/001 | Test2 |
+| -- | ---- | ------- | ----------- |
+| 1  | Test | N01/001 | Test2       |
 
 | Key						| Function															|
 | ------------------------- | ----------------------------------------------------------------- |
 | **Usefull Binds** 		| 																	|
+| **n** 					| Drop the bomb immediately and say to the team you dropped it. 	|
