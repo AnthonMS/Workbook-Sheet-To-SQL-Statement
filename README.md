@@ -31,3 +31,7 @@ You can add columns from column1 to and including column8. To use more columns, 
 
 IMPORTANT: column1 has to be the first column of the Excel Sheet/Workbook Sheet. So if column 1 in the sheet is equal to the ID of the Database table, you will HAVE to put column1=ID. ID does NOT have to be the first column in the database, it could be the last for all it cares.
 
+For example if you have a Data Sheet that has these columns:
+
+|ID|Name|Sys/Cli|Object Name|
+|1|Test|N01/001|Test2|
