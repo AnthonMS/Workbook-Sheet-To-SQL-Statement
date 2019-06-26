@@ -37,7 +37,8 @@ For example if you have a Data Sheet that has these columns:
 | -- | ---- | ------- | ----------- |
 | 1  | Test | N01/001 | Test2       |
 
-| Key						| Function															|
-| ------------------------- | ----------------------------------------------------------------- |
-| **Usefull Binds** 		| 																	|
-| **n** 					| Drop the bomb immediately and say to the team you dropped it. 	|
+And the Database table looks like this:
+
+| id | system | client | name | objName |
+| -- | ----  | ------- | -------------- |
+| 1  | N01   | 001     | Test | Test2   |
